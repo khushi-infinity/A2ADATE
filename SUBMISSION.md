@@ -1,13 +1,9 @@
 # Submission (fill the two URLs after deploy + upload)
 
 - **YouTube (3 min max, profiles → live date → rankings):** https://youtube.com/… (upload per VIDEO_SCRIPT.md, unlisted)
-- **Demo link (seeded 25, already run):** https://cupid-agents.vercel.app (or http://localhost:3000 for local grading — `npm run dev`)
-- **Live website (paste your own links):** https://cupid-agents.vercel.app
-- **GitHub (public):** https://github.com/you/cupid-agents
-  ```bash
-  cd ~/Desktop/interntest
-  gh repo create cupid-agents --public --source=. --push
-  ```
+- **Demo link (seeded 25, already run):** https://interntest-orpin.vercel.app
+- **Live website (paste your own links):** https://interntest-orpin.vercel.app
+- **GitHub (public):** https://github.com/khushi-infinity/A2ADATE
 
 ## Overall explanation (200 chars)
 Cupid Agents: paste LinkedIn+Instagram, an agent profiles each person (needs/hobbies/interests), agents date each other live, and everyone gets a ranked match list. 25 real people seeded.
