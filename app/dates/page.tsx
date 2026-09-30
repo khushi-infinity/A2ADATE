@@ -7,7 +7,7 @@ function Arena() {
   const sp = useSearchParams();
   const [people, setPeople] = useState<any[]>([]);
   const [a, setA] = useState(sp.get("a") || "sam-altman");
-  const [b, setB] = useState("alexis-ohanian");
+  const [b, setB] = useState(sp.get("b") || "alexis-ohanian");
   const [res, setRes] = useState<any>(null);
   const [shown, setShown] = useState(0);
 

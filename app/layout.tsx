@@ -13,7 +13,7 @@ export default function Root({ children }: { children: React.ReactNode }) {
             <Link href="/">People</Link>
             <Link href="/dates">Dating arena</Link>
             <Link href="/rankings">Rankings</Link>
-            <a className="pill" href="https://github.com/you/repo" target="_blank" rel="noreferrer">GitHub</a>
+            <a className="pill" href="https://github.com/khushi-infinity/A2ADATE" target="_blank" rel="noreferrer">GitHub</a>
           </nav>
         </header>
         <main className="wrap">{children}</main>
