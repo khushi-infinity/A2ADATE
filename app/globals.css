@@ -1,0 +1,46 @@
+:root { --bg:#0f0b14; --card:#1c1426; --ink:#f7eef7; --mut:#c9b8d4; --acc:#ff4d8d; --acc2:#a78bfa; --line:#332544; }
+* { box-sizing: border-box; }
+body { margin:0; background:radial-gradient(1000px 500px at 20% -10%, #2b1740, transparent), var(--bg); color:var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+a { color: inherit; }
+.nav { display:flex; justify-content:space-between; align-items:center; padding:14px 22px; border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(15,11,20,.85); backdrop-filter: blur(8px); z-index:10; }
+.brand { font-weight:800; font-size:20px; text-decoration:none; }
+.nav nav { display:flex; gap:16px; align-items:center; }
+.nav nav a { text-decoration:none; opacity:.9; }
+.pill { border:1px solid var(--line); padding:6px 12px; border-radius:999px; }
+.wrap { max-width:1080px; margin:0 auto; padding:28px 20px 60px; }
+.hero { display:grid; grid-template-columns:1.2fr .8fr; gap:20px; align-items:stretch; }
+@media (max-width:800px){ .hero{grid-template-columns:1fr;} }
+.card { background:linear-gradient(180deg, #221631, #160f20); border:1px solid var(--line); border-radius:18px; padding:20px; }
+.hero h1 { font-size:44px; line-height:1.02; margin:8px 0 10px; }
+.grad { background:linear-gradient(90deg,var(--acc),var(--acc2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.sub { color:var(--mut); line-height:1.6; }
+.flow { display:flex; gap:8px; flex-wrap:wrap; margin:14px 0; }
+.chip { border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-size:13px; color:var(--mut); }
+.btn { background:linear-gradient(90deg,var(--acc),#ff7ab8); border:0; color:white; font-weight:700; padding:11px 16px; border-radius:12px; cursor:pointer; }
+.btn2 { background:#2a1e3d; border:1px solid var(--line); color:var(--ink); padding:10px 14px; border-radius:12px; cursor:pointer; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:18px; }
+@media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:600px){ .grid{grid-template-columns:1fr;} }
+.pcard { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px; display:flex; gap:12px; }
+.avatar { width:52px; height:52px; border-radius:50%; display:grid; place-items:center; font-weight:800; background:linear-gradient(135deg,var(--acc),var(--acc2)); flex-shrink:0; }
+.pcard h3 { margin:0 0 2px; font-size:16px; }
+.pcard p { margin:2px 0; color:var(--mut); font-size:13px; }
+.links { display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; }
+.links a { font-size:12px; border:1px solid var(--line); border-radius:999px; padding:4px 9px; text-decoration:none; }
+.row { display:flex; gap:10px; flex-wrap:wrap; }
+input, select { background:#120c1a; border:1px solid var(--line); color:var(--ink); border-radius:10px; padding:10px 12px; width:100%; }
+label { font-size:12px; color:var(--mut); }
+.kv { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.tag { display:inline-block; background:#2a1e3d; border:1px solid var(--line); border-radius:999px; padding:4px 10px; margin:3px 4px 0 0; font-size:12px; }
+.score { font-size:40px; font-weight:900; }
+.chat { display:flex; flex-direction:column; gap:10px; margin-top:12px; }
+.bubble { max-width:85%; padding:10px 13px; border-radius:14px; line-height:1.5; font-size:14px; }
+.me { align-self:flex-start; background:#2b2140; border:1px solid var(--line); }
+.them { align-self:flex-end; background:linear-gradient(135deg,#3b1d33,#251b3d); border:1px solid #4a2b45; }
+.sys { align-self:center; background:#12281c; border:1px solid #1f4d33; font-size:13px; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media (max-width:800px){ .two{grid-template-columns:1fr;} .kv{grid-template-columns:1fr;} }
+.foot { text-align:center; color:var(--mut); padding:26px; border-top:1px solid var(--line); font-size:13px; }
+.rankrow { display:flex; justify-content:space-between; align-items:center; padding:10px 12px; border-bottom:1px solid var(--line); }
+.bar { height:8px; background:#2a1e3d; border-radius:99px; overflow:hidden; margin-top:6px; }
+.bar > div { height:100%; background:linear-gradient(90deg,var(--acc),var(--acc2)); }
